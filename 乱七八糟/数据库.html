@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据库 | Francis-xsc</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <meta name="description" content="徐思崇">
+    <meta name="author" href="Francis-xsc">
+    <link rel="preload" href="/assets/css/0.styles.6b7c271b.css" as="style"><link rel="preload" href="/assets/js/app.a5ec0a2d.js" as="script"><link rel="preload" href="/assets/js/2.785c97dd.js" as="script"><link rel="preload" href="/assets/js/13.9b030b75.js" as="script"><link rel="prefetch" href="/assets/js/10.ad541554.js"><link rel="prefetch" href="/assets/js/11.4ef84df1.js"><link rel="prefetch" href="/assets/js/12.a78e1bb6.js"><link rel="prefetch" href="/assets/js/14.a417bbc1.js"><link rel="prefetch" href="/assets/js/15.ecabb56f.js"><link rel="prefetch" href="/assets/js/16.216857e5.js"><link rel="prefetch" href="/assets/js/17.dde2a7cb.js"><link rel="prefetch" href="/assets/js/18.04704f8d.js"><link rel="prefetch" href="/assets/js/19.7f14631d.js"><link rel="prefetch" href="/assets/js/20.602915c9.js"><link rel="prefetch" href="/assets/js/21.98bfad00.js"><link rel="prefetch" href="/assets/js/22.01a3eb25.js"><link rel="prefetch" href="/assets/js/23.48ede5bc.js"><link rel="prefetch" href="/assets/js/24.97e54fe0.js"><link rel="prefetch" href="/assets/js/25.41e29e25.js"><link rel="prefetch" href="/assets/js/26.798a511f.js"><link rel="prefetch" href="/assets/js/27.99bf2ebc.js"><link rel="prefetch" href="/assets/js/28.893b543f.js"><link rel="prefetch" href="/assets/js/29.5a462b04.js"><link rel="prefetch" href="/assets/js/3.bff38b48.js"><link rel="prefetch" href="/assets/js/30.606c4725.js"><link rel="prefetch" href="/assets/js/31.3c34f459.js"><link rel="prefetch" href="/assets/js/32.7a04a839.js"><link rel="prefetch" href="/assets/js/33.f0160151.js"><link rel="prefetch" href="/assets/js/34.33a3b310.js"><link rel="prefetch" href="/assets/js/35.508b6360.js"><link rel="prefetch" href="/assets/js/4.71453c45.js"><link rel="prefetch" href="/assets/js/5.5fc371a9.js"><link rel="prefetch" href="/assets/js/6.42ef6059.js"><link rel="prefetch" href="/assets/js/7.2febbb17.js"><link rel="prefetch" href="/assets/js/8.5566e199.js"><link rel="prefetch" href="/assets/js/9.ec62d861.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b7c271b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="Francis-xsc" class="logo"> <span class="site-name can-hide">Francis-xsc</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/大话数据结构/" class="nav-link">
+  大话数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/快速幂算法 牛客小白月赛 1-C分元宵/" class="nav-link">
+  快速幂算法
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_邓俊辉/" class="nav-link">
+  数据结构_邓俊辉
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_学校/" class="nav-link">
+  数据结构(学校）
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/语言/文件读写/" class="nav-link">
+  文件读写
+</a></li><li class="dropdown-item"><!----> <a href="/语言/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/语言/python-北理工/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">乱七八糟</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">乱七八糟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/乱七八糟/乱七八糟/" class="nav-link">
+  乱七八糟
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/虚拟机安装凤凰OS/" class="nav-link">
+  虚拟机安装凤凰OS
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/数据库/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/国内访问GitHub/" class="nav-link">
+  国内访问GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/软件工程过程/" class="nav-link">
+  软件工程过程
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/WindowsTerminal/" class="nav-link">
+  Windows Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/IDEA/" class="nav-link">
+  IDEA
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/大话数据结构/" class="nav-link">
+  大话数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/快速幂算法 牛客小白月赛 1-C分元宵/" class="nav-link">
+  快速幂算法
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_邓俊辉/" class="nav-link">
+  数据结构_邓俊辉
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_学校/" class="nav-link">
+  数据结构(学校）
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/语言/文件读写/" class="nav-link">
+  文件读写
+</a></li><li class="dropdown-item"><!----> <a href="/语言/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/语言/python-北理工/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">乱七八糟</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">乱七八糟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/乱七八糟/乱七八糟/" class="nav-link">
+  乱七八糟
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/虚拟机安装凤凰OS/" class="nav-link">
+  虚拟机安装凤凰OS
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/数据库/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/国内访问GitHub/" class="nav-link">
+  国内访问GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/软件工程过程/" class="nav-link">
+  软件工程过程
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/WindowsTerminal/" class="nav-link">
+  Windows Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/IDEA/" class="nav-link">
+  IDEA
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>数据库</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#dql语言" class="sidebar-link">DQL语言</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#条件查询" class="sidebar-link">条件查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#语法" class="sidebar-link">语法：</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#排序查询" class="sidebar-link">排序查询</a></li></ul></li><li><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#常见函数" class="sidebar-link">常见函数</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#单行函数" class="sidebar-link">单行函数</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#数学函数" class="sidebar-link">数学函数</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#日期函数" class="sidebar-link">日期函数</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#其他函数" class="sidebar-link">其他函数</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#流程控制函数、" class="sidebar-link">流程控制函数、</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#分组函数" class="sidebar-link">分组函数</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#分组查询" class="sidebar-link">分组查询</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#连接查询" class="sidebar-link">连接查询</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#自连接" class="sidebar-link">自连接</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#sql99语法" class="sidebar-link">sql99语法</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#子查询" class="sidebar-link">子查询</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#插入语句" class="sidebar-link">插入语句</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#修改语句" class="sidebar-link">修改语句</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#删除语句" class="sidebar-link">删除语句</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#数据定义语言" class="sidebar-link">数据定义语言</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#数据类型" class="sidebar-link">数据类型</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#标识列" class="sidebar-link">标识列</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#事务" class="sidebar-link">事务</a></li><li class="sidebar-sub-header"><a href="/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/%E6%95%B0%E6%8D%AE%E5%BA%93.html#视图" class="sidebar-link">视图</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="数据库"><a href="#数据库" class="header-anchor">#</a> 数据库</h4> <h3 id="mysql服务的启动和停止"><a href="#mysql服务的启动和停止" class="header-anchor">#</a> MySQL服务的启动和停止</h3> <p>net stop</p> <p>net start</p> <h3 id="mysql服务端的登录和退出"><a href="#mysql服务端的登录和退出" class="header-anchor">#</a> MySQL服务端的登录和退出</h3> <p>法一：通过MySQL自带的客户端</p> <p>只限于root用户</p> <p>方式二：</p> <p>通过Windows自带的客户端</p> <p><code>mysql [-h主机名 -P端口号] -u用户名 -p密码</code></p> <p><code>mysql -uroot -p</code></p> <p>退出:exit或ctrl+c</p> <h3 id="mysql常见命令"><a href="#mysql常见命令" class="header-anchor">#</a> MySQL常见命令</h3> <p>查看当前所有数据库:<code>show database;</code></p> <p>打开指定的库:<code>use 库名</code></p> <p>查看当前库的所有表<code>show tables;</code></p> <p>查看其他库的所有表:<code>show tables from 库名</code></p> <p><code>select database();</code> 查看当前所在库</p> <p>创建表:</p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">table</span> 表名<span class="token punctuation">(</span>
+	列名 列类型<span class="token punctuation">,</span>
+    列明 列类型<span class="token punctuation">,</span>
+    <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token punctuation">)</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> stuinfo<span class="token punctuation">(</span>
+    id <span class="token keyword">int</span><span class="token punctuation">,</span>
+    name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>查看表结构:<code>desc stuindo;</code></p> <p>看表中有哪些数据</p> <p><code>select * from stuinfo</code>;</p> <p><code>insert into stuinfo(id,name) values(1,'john');</code></p> <p>修改 <code>update stuintfo set name ='lilei' where id=1;</code></p> <p>删除 <code>delete from stuinfo where id=1;</code></p> <p>查看服务器版本</p> <p>方式一:登录到mysql客户端</p> <p><code>select version();</code></p> <p>方式二:没有登录到mysql客户端</p> <p><code>mysql --version</code></p> <p>或</p> <p><code>mysql --V</code></p> <h3 id="mysql语法规范"><a href="#mysql语法规范" class="header-anchor">#</a> MySQL语法规范</h3> <ol><li><p>不区分大小写，但建议关键字大写， 表名，列名小写</p></li> <li><p>每条命令最好用分号结尾</p></li> <li><p>每条命令根据需要，可以进行缩进或换行</p></li> <li><p>注释</p> <div class="language- extra-class"><pre class="language-text"><code>#单行注释
+-- 注释文字（有空格）
+/*
+多行注释
+*/
+</code></pre></div></li></ol> <h2 id="dql语言"><a href="#dql语言" class="header-anchor">#</a> DQL语言</h2> <p>Data Query language数据库查询语言</p> <div class="language-mysql extra-class"><pre class="language-text"><code>#基础查询
+语法：
+select 查询列表 from 表名;
+</code></pre></div><p>特点：</p> <ul><li>查询列表可以是：表中的字段、常量值、表达式、函数</li> <li>查询的结果是一个虚拟的表格</li></ul> <ol><li><p>查询表中的单个字段</p> <p><code>select last_name form employees;</code></p></li> <li><p>查询表中的多个字段
+<code>select last_name,salary,email form employees;</code></p></li> <li><p>查询表中的所有字段</p> <p><code>select * from employees;</code></p></li> <li><p>查询常量值</p> <p><code>SELECT 100;</code></p> <p><code>SELECT 'john';</code></p></li> <li><p>查询表达式</p> <p><code>SELECT 100*98;</code></p></li> <li><p>查询函数</p> <p><code>SELECT VERSION();</code></p></li> <li><p>起别名</p> <p><code>SELECT ... AS ...</code></p> <p><code>select lastname 姓</code></p> <ul><li>便于理解</li> <li>如果要查询的字段有重名的情况，使用别名可以区分开来</li></ul></li> <li><p>去重</p> <p><code>SELECT DISTINCT ... from ...</code></p></li> <li><p>+的作用:运算符</p> <ul><li>两个操作数都为数值型，则做加法运算</li> <li>其中一方为字符型，试图将字符型数值转换成数值型</li> <li>如果转换成功，则继续做加法运算</li> <li>如果转换失败，则将字符型数值转换成0</li> <li>只要其中一方为null，则结果肯定为null</li></ul> <p>例：查询员工名和姓连接成一个字段，并显示成姓名</p> <p><s>SELECT last_name+first_name as 姓名 from employees;</s></p></li></ol> <p><code>select concat(last_name,first_name) as 姓名</code></p> <p>ifnull(cc,0)</p> <h2 id="条件查询"><a href="#条件查询" class="header-anchor">#</a> 条件查询</h2> <h3 id="语法"><a href="#语法" class="header-anchor">#</a> 语法：</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span>
+	查询列表	<span class="token number">3</span>
+<span class="token keyword">from</span>
+	表名			<span class="token number">1</span>
+<span class="token keyword">where</span>
+	筛选条件<span class="token punctuation">;</span>	<span class="token number">2</span>
+	
+</code></pre></div><p>分类：</p> <ul><li>按条件表达式筛选
+条件表达式：&gt; 	&lt; 	= 	!= 	&lt;&gt;	&gt;=	&lt;=</li> <li>按逻辑表达式筛选
+逻辑运算符：&amp;&amp;||	!
+and or not</li> <li>模糊查询
+<ul><li>like</li> <li>between and</li> <li>in</li> <li>is null</li></ul></li></ul> <h4 id="按条件表达式筛选"><a href="#按条件表达式筛选" class="header-anchor">#</a> 按条件表达式筛选</h4> <div class="language-sql extra-class"><pre class="language-sql"><code>查询工资<span class="token operator">&gt;</span><span class="token number">12000</span>的员工信息
+<span class="token keyword">SELECT</span>
+	<span class="token operator">*</span>
+<span class="token keyword">FROM</span>
+	employees
+<span class="token keyword">WHERE</span>
+	salary<span class="token operator">&gt;</span><span class="token number">12000</span><span class="token punctuation">;</span>
+<span class="token comment">---------------------------</span>
+查询部门编号不等于<span class="token number">90</span>号的员工名和部门编号
+<span class="token keyword">SELECT</span>
+	last_name<span class="token punctuation">,</span>
+	department_id
+<span class="token keyword">from</span>
+	employees
+<span class="token keyword">where</span>
+	department_id <span class="token operator">&lt;&gt;</span> <span class="token number">90</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="按逻辑表达式筛选"><a href="#按逻辑表达式筛选" class="header-anchor">#</a> 按逻辑表达式筛选</h4> <h4 id="模糊查询"><a href="#模糊查询" class="header-anchor">#</a> 模糊查询</h4> <div class="language-sql extra-class"><pre class="language-sql"><code>查询员工名中包含字符a的员工信息
+<span class="token keyword">SELECT</span>
+	<span class="token operator">*</span>
+<span class="token keyword">FROM</span>
+	employees
+<span class="token keyword">WHERE</span>
+	last_name <span class="token operator">LIKE</span> <span class="token string">'%a%'</span><span class="token punctuation">;</span>
+<span class="token comment">--------------------------------------</span>
+查询员工名中第二个字符为_的员工名——用\转义
+<span class="token keyword">SELECT</span>
+	<span class="token operator">*</span>
+<span class="token keyword">FROM</span>
+	employees
+<span class="token keyword">WHERE</span>
+	last_name <span class="token operator">LIKE</span> <span class="token string">'_\_%'</span><span class="token punctuation">;</span>
+	<span class="token operator">LIKE</span> <span class="token string">'_$_%'</span> <span class="token keyword">ESCAPE</span> <span class="token string">'$'</span><span class="token punctuation">;</span><span class="token comment">#把$设为转义字符</span>
+</code></pre></div><p>like特点:</p> <ul><li><p>一般和通配符配合使用</p> <p>通配符:% 任意多个字符，包含0个字符</p> <p>​			_ 任意单个字符</p></li></ul> <p>between and</p> <ul><li>可以提高语句简洁度</li> <li>包含临界值</li> <li>两个临界值不能不要调换顺序</li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>#查询员工编号在100到120之间的元素信息
+SELECT
+	*
+FROM
+	employees
+WHERE
+	employee_id BETWEEN 100 AND 120;
+</code></pre></div><h4 id="in"><a href="#in" class="header-anchor">#</a> in</h4> <p>判断某字段的值是否属于in列表中的某一项</p> <p>特点：</p> <ul><li>提高语句简洁度</li> <li>in列表的值类型必须一致或兼容</li> <li>不能使用通配符</li></ul> <div class="language-mysql extra-class"><pre class="language-text"><code>#查询员工的工种编号是IT_PROG、AD_VP、AD_PRES中的一个员工名和工种编号
+SELECT
+	last_name,
+	job_id,
+FROM
+	employees
+WHERE
+	job_id IN('IT_PROG','AD_VP','AD_PRES');
+</code></pre></div><h4 id="is-null"><a href="#is-null" class="header-anchor">#</a> is null</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT
+	last_name,
+	job_id,
+FROM
+	employees
+WHERE
+	commission_pct IS NULL;
+	IS NOT NULL;
+</code></pre></div><h4 id="安全等于"><a href="#安全等于" class="header-anchor">#</a> 安全等于&lt;=&gt;</h4> <p>xxx&lt;=&gt;null;</p> <p>IS NULL:仅仅可以判断NULL值，可读性较高，建议使用
+&lt;=&gt;:既可以判断NULL值，又可以判断普通的数值，可读性较低</p> <h3 id="排序查询"><a href="#排序查询" class="header-anchor">#</a> 排序查询</h3> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">select</span> 查询列表
+<span class="token keyword">from</span> 表
+【<span class="token keyword">where</span> 筛选条件】
+<span class="token keyword">order</span> <span class="token keyword">by</span> 排序列表【<span class="token keyword">asc</span><span class="token operator">|</span><span class="token keyword">desc</span>】
+</code></pre></div><p>特点:</p> <ul><li><p>asc代表升序、desc代表降序</p> <p>如果不写，默认是升序</p> <p>按别名、表达式、函数、多个字段排序</p></li> <li><p>order by子句中可以支持单个字段、多个字段、表达式、函数、别名</p></li> <li><p>order by子句一般是放在查询语句的最后面，limit子句除外</p></li></ul> <h2 id="常见函数"><a href="#常见函数" class="header-anchor">#</a> 常见函数</h2> <p>功能：类似Java的方法，将一组逻辑语句封装在方法体中，对外暴露方法名</p> <p>好处：</p> <ol><li>隐藏了实现细节</li> <li>提高代码的重用性</li></ol> <p>调用：<code>select 函数名() 【from 表】;</code></p> <p>特点：</p> <ol><li>函数名</li> <li>函数功能</li></ol> <p>分类：</p> <ul><li><p>单行函数</p> <p>如concat、length、ifnull等</p></li> <li><p>分组函数</p> <p>功能:做统计使用、又称为统计函数、聚合函数、组函数</p></li></ul> <h3 id="单行函数"><a href="#单行函数" class="header-anchor">#</a> 单行函数</h3> <ul><li>字符函数</li> <li>数学函数</li> <li>日期函数</li> <li>其他函数【补充】</li> <li>流程控制函数【补充】</li></ul> <h4 id="字符函数"><a href="#字符函数" class="header-anchor">#</a> 字符函数</h4> <h4 id="length"><a href="#length" class="header-anchor">#</a> length</h4> <p>获取参数值的字节个数</p> <h4 id="concat拼接字符串"><a href="#concat拼接字符串" class="header-anchor">#</a> concat拼接字符串</h4> <p><code>SELECT CONCAT(last_name,'_',first_name) 姓名 FROM employees;</code></p> <h4 id="upper、lower"><a href="#upper、lower" class="header-anchor">#</a> upper、lower</h4> <p><code>SELECT UPPER('john');</code></p> <h4 id="substr、substring"><a href="#substr、substring" class="header-anchor">#</a> substr、substring</h4> <p>注意：索引从1开始</p> <p><code>SELECT SUBSTR('1234567'，6) out_put;</code></p> <p><code>SELECT SUBSTR('1234567'，1，3) out_put;</code>123</p> <h4 id="instr"><a href="#instr" class="header-anchor">#</a> instr</h4> <p>返回字串 第一次出现的索引，如果找不到返回0</p> <p><code>INSTR('1234','34');</code>3</p> <h4 id="trim去掉前后的字符"><a href="#trim去掉前后的字符" class="header-anchor">#</a> trim去掉前后的字符</h4> <p><code>trim(' solfj ')</code></p> <p><code>trim('a' from 'aaaaaaaaa出aaaaaaaa绝健康的aaaaaaaaaaaaaaa')</code></p> <h4 id="lpad用指定的字符实现左填充指定的长度"><a href="#lpad用指定的字符实现左填充指定的长度" class="header-anchor">#</a> lpad用指定的字符实现左填充指定的长度</h4> <p><code>SELECT LPAD （’asdf',2,'*') as out_put;</code></p> <h4 id="rpad"><a href="#rpad" class="header-anchor">#</a> rpad</h4> <h4 id="replace-替换"><a href="#replace-替换" class="header-anchor">#</a> replace 替换</h4> <p><code>SELECT REPLCE('张无忌爱上了周芷若','周芷若','赵敏') as out_put;</code></p> <p>---------&gt;张无忌爱上了赵敏</p> <h3 id="数学函数"><a href="#数学函数" class="header-anchor">#</a> 数学函数</h3> <h4 id="round-四舍五入"><a href="#round-四舍五入" class="header-anchor">#</a> round 四舍五入</h4> <p><code>SELECT ROUND(-1.45);</code></p> <p><code>SELECT ROUND(-1.567,2);</code></p> <h4 id="celi-向上取整"><a href="#celi-向上取整" class="header-anchor">#</a> celi 向上取整</h4> <p>返回大于等于该参数的最小整数</p> <p>1.52---&gt;2</p> <h4 id="floor向下取整"><a href="#floor向下取整" class="header-anchor">#</a> floor向下取整</h4> <p>&lt;=</p> <h4 id="truncate-截断"><a href="#truncate-截断" class="header-anchor">#</a> truncate 截断</h4> <p><code>SELECT TRUNCATE(1.699999,1);</code>1.6</p> <h4 id="取余"><a href="#取余" class="header-anchor">#</a> 取余</h4> <p><code>MOD(a,b)</code>---&gt;<code>a-a/b*b</code></p> <p><code>SELECT MOD(-10,3)</code></p> <p><code>SELECT 10%3;</code></p> <h3 id="日期函数"><a href="#日期函数" class="header-anchor">#</a> 日期函数</h3> <h4 id="now"><a href="#now" class="header-anchor">#</a> now</h4> <p>返回当前系统日期+时间</p> <p><code>SELECT NOW()</code></p> <h4 id="curdate"><a href="#curdate" class="header-anchor">#</a> curdate</h4> <p>返回当前系统日期，不包含时间</p> <p><code>SELECT CURDATE();</code></p> <h4 id="curtime"><a href="#curtime" class="header-anchor">#</a> curtime</h4> <p>返回当前时间，不包含日期</p> <p>SELECT CURTIME();</p> <h4 id="可以获取指定的部分-年、月、日、小时、分钟、秒"><a href="#可以获取指定的部分-年、月、日、小时、分钟、秒" class="header-anchor">#</a> 可以获取指定的部分，年、月、日、小时、分钟、秒</h4> <p><code>SELECT YEAR(NOW()) 年;</code></p> <p><code>SELECT YEAR('1998-1-1') 年;</code></p> <p><code>SELECT YEAR(hiredate) 年 FROM employees;</code></p> <p><code>SELECT MONTH(NOW()) 月;</code></p> <p><code>SELECT MONTHNAME(NOW()) 月;</code></p> <h4 id="str-to-date"><a href="#str-to-date" class="header-anchor">#</a> str_to_date</h4> <p>将日期格式的字符转换成指定格式的日期</p> <p>`STR_TO_DATE('9-13-1999','%m-%d-%Y')</p> <h4 id="date-format"><a href="#date-format" class="header-anchor">#</a> date_format</h4> <p>将日期转换成字符</p> <p><code>DATE_FORMAT('2018/6/6','%Y年%m月%d日')</code></p> <table><thead><tr><th style="text-align:center;">格式符</th> <th style="text-align:center;">功能</th></tr></thead> <tbody><tr><td style="text-align:center;">%Y</td> <td style="text-align:center;">四位的年份</td></tr> <tr><td style="text-align:center;">%y</td> <td style="text-align:center;">二位的年份</td></tr> <tr><td style="text-align:center;">%m</td> <td style="text-align:center;">月份(01,02...11,12)</td></tr> <tr><td style="text-align:center;">%c</td> <td style="text-align:center;">月份(1,2,...11,12)</td></tr> <tr><td style="text-align:center;">%d</td> <td style="text-align:center;">日(01,02...)</td></tr> <tr><td style="text-align:center;">%H</td> <td style="text-align:center;">小时（24小时制）</td></tr> <tr><td style="text-align:center;">%h</td> <td style="text-align:center;">小时（12小时制）</td></tr> <tr><td style="text-align:center;">%i</td> <td style="text-align:center;">分钟(00,01...59)</td></tr> <tr><td style="text-align:center;">%s</td> <td style="text-align:center;">秒(00,01...59)</td></tr></tbody></table> <p>相差天数DATEDIFF</p> <h3 id="其他函数"><a href="#其他函数" class="header-anchor">#</a> 其他函数</h3> <p>SELECT VERSION();</p> <p>SELECT DATABASE();</p> <p>SELECT USER();</p> <h3 id="流程控制函数、"><a href="#流程控制函数、" class="header-anchor">#</a> 流程控制函数、</h3> <ol><li>if函数： if else 的效果</li></ol> <p><code>SELECT IF(10&lt;5,'大','小');</code></p> <div class="language-sql extra-class"><pre class="language-sql"><code><span class="token keyword">SELECT</span> <span class="token keyword">IF</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">------------</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+	b<span class="token punctuation">;</span>
+<span class="token keyword">else</span>
+	c<span class="token punctuation">;</span>
+</code></pre></div><ol start="2"><li><p>case函数</p> <p>使用一</p></li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code>case 要判断的字段或表达式
+when 常量1 then 要显示的值1或语句1;
+when 常量2 then 要显示的值2或语句2;
+...
+else 要显示的值n或语句n;
+end
+
+
+部门号=30，显示的工资为1.1倍
+部门号=40，显示的工资为1.2倍
+部门号=50，显示的工资为1.3倍
+其他部门，显示的工资为原工资
+SELECT salary 原始工资,department_id,
+CASE department_id
+WHEN 30 THEN salary*1.1
+WHEN 40 THEN salary*1.2
+WHEN 50 THEN salary*1.3
+ELSE salary
+END AS 新工资
+FROM employees;
+</code></pre></div><p>使用二：类似于 多重if</p> <div class="language-mysql extra-class"><pre class="language-text"><code>case 
+when 条件1 then 要显示的值1或语句1
+when 条件2 then 要显示的值2或语句2
+。。。
+else 要显示的值n或语句n
+end
+
+#案例：查询员工的工资的情况
+如果工资&gt;20000,显示A级别
+如果工资&gt;15000,显示B级别
+如果工资&gt;10000，显示C级别
+否则，显示D级别
+
+
+SELECT salary,
+CASE 
+WHEN salary&gt;20000 THEN 'A'
+WHEN salary&gt;15000 THEN 'B'
+WHEN salary&gt;10000 THEN 'C'
+ELSE 'D'
+END AS 工资级别
+FROM employees;
+
+</code></pre></div><h3 id="分组函数"><a href="#分组函数" class="header-anchor">#</a> 分组函数</h3> <p>功能：用作统计使用，又称为聚合函数或统计函数或组函数</p> <p>分类：
+sum 求和、avg 平均值、max 最大值 、min 最小值 、count 计算个数</p> <p>特点：</p> <ol><li><p>sum、avg一般用于处理数值型
+max、min、count可以处理任何类型</p></li> <li><p>以上分组函数都忽略null值</p></li> <li><p>可以和distinct搭配实现去重的运算</p></li> <li><p>count函数的单独介绍</p> <p>一般使用count(*)用作统计行数</p></li> <li><p>和分组函数一同查询的字段要求是group by后的字段count</p></li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code>SELECT COUNT(salary) FROM employees;
+
+
+SELECT COUNT(*) FROM employees;
+
+SELECT COUNT(1) FROM employees;
+
+效率：
+MYISAM存储引擎下  ，COUNT(*)的效率高
+INNODB存储引擎下，COUNT(*)和COUNT(1)的效率差不多，比COUNT(字段)要高一些
+</code></pre></div><h3 id="分组查询"><a href="#分组查询" class="header-anchor">#</a> 分组查询</h3> <div class="language-mysql extra-class"><pre class="language-text"><code>select 查询列表
+from 表
+【where 筛选条件】
+group by 分组的字段
+【order by 排序的字段】;
+</code></pre></div><p>特点：</p> <ol><li><p>和分组函数一同查询的字段必须是group by后出现的字段</p></li> <li><p>筛选分为两类：分组前筛选和分组后筛选</p> <table><thead><tr><th style="text-align:center;"></th> <th style="text-align:center;">数据源</th> <th style="text-align:center;">位置</th> <th style="text-align:center;">连接的关键字</th></tr></thead> <tbody><tr><td style="text-align:center;">分组前筛选</td> <td style="text-align:center;">原始表</td> <td style="text-align:center;">group by前</td> <td style="text-align:center;">where</td></tr> <tr><td style="text-align:center;">分组后筛选</td> <td style="text-align:center;">分组后的结果集</td> <td style="text-align:center;">group by后</td> <td style="text-align:center;">having</td></tr></tbody></table> <p>问题1：分组函数做筛选能不能放在where后面
+答：不能，分组函数做条件肯定是放在having子句中</p> <p>问题2：where——group by——having</p> <p>一般来讲，能用分组前筛选的，尽量使用分组前筛选，提高效率</p></li> <li><p>分组可以按单个字段也可以按多个字段</p></li> <li><p>可以搭配着排序使用</p></li></ol> <h3 id="连接查询"><a href="#连接查询" class="header-anchor">#</a> 连接查询</h3> <p>含义：又称多表查询，当查询的字段来自于多个表时，就会用到连接查询</p> <p>笛卡尔乘积现象：表1 有m行，表2有n行，结果=m*n行</p> <p>发生原因：没有有效的连接条件
+如何避免：添加有效的连接条件</p> <p>分类：</p> <ul><li>按年代分类：
+<ul><li>sql92标准:仅仅支持内连接</li> <li>sql99标准【推荐】：支持内连接+外连接（左外和右外）+交叉连接</li></ul></li> <li>按功能分类：
+<ul><li>内连接：
+<ul><li>等值连接</li> <li>非等值连接</li> <li>自连接</li></ul></li> <li>外连接：
+<ul><li>左外连接</li> <li>右外连接</li> <li>全外连接</li></ul></li> <li>交叉连接</li></ul></li></ul> <h3 id="自连接"><a href="#自连接" class="header-anchor">#</a> 自连接</h3> <h3 id="sql99语法"><a href="#sql99语法" class="header-anchor">#</a> sql99语法</h3> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>select 查询列表
+from 表1 别名 【连接类型】
+join 表2 别名 
+on 连接条件
+【where 筛选条件】
+【group by 分组】
+【having 筛选条件】
+【order by 排序列表】
+</code></pre></div><p>分类：</p> <ul><li>内连接（★）：inner</li> <li>外连接
+<ul><li>左外(★):left 【outer】</li> <li>右外(★)：right 【outer】</li> <li>全外：full【outer】</li></ul></li> <li>交叉连接：cross</li></ul> <h4 id="内连接"><a href="#内连接" class="header-anchor">#</a> 内连接</h4> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>select 查询列表
+from 表1 别名
+inner join 表2 别名
+on 连接条件;
+</code></pre></div><p>分类：</p> <ul><li>等值</li> <li>非等值</li> <li>自连接</li></ul> <p>特点：</p> <ol><li>添加排序、分组、筛选</li> <li>inner可以省略</li> <li>筛选条件放在where后面，连接条件放在on后面，提高分离性，便于阅读</li> <li>inner join连接和sql92语法中的等值连接效果是一样的，都是查询多表的交集</li></ol> <p>应用场景：用于查询一个表中有，另一个表没有的记录</p> <p>特点：</p> <ol><li><p>外连接的查询结果为主表中的所有记录</p> <p>​	如果从表中有和它匹配的，则显示匹配的值</p> <p>​	如果从表中没有和它匹配的，则显示null</p> <p>​	外连接查询结果=内连接结果+主表中有而从表没有的记录</p></li> <li><p>左外连接，left join左边的是主表
+右外连接，right join右边的是主表</p></li> <li><p>左外和右外交换两个表的顺序，可以实现同样的效果</p></li> <li><p>全外连接=内连接的结果+表1中有但表2没有的+表2中有但表1没有的</p></li></ol> <h4 id="交叉连接"><a href="#交叉连接" class="header-anchor">#</a> 交叉连接</h4> <div class="language-mysql extra-class"><pre class="language-text"><code> SELECT b.*,bo.
+ FROM beauty b
+ CROSS JOIN boys bo;
+</code></pre></div><h4 id="sql92和-sql99pk"><a href="#sql92和-sql99pk" class="header-anchor">#</a> sql92和 sql99pk</h4> <ul><li>功能：sql99支持的较多</li> <li>可读性：sql99实现连接条件和筛选条件的分离，可读性较高</li></ul> <h3 id="子查询"><a href="#子查询" class="header-anchor">#</a> 子查询</h3> <h4 id="含义"><a href="#含义" class="header-anchor">#</a> 含义：</h4> <p>出现在其他语句中的select语句，称为子查询或内查询</p> <p>外部的查询语句，称为主查询或外查询</p> <p>分类：</p> <ul><li>按子查询出现的位置：
+<ul><li>select后面：
+<ul><li>仅仅支持标量子查询</li></ul></li> <li>from后面：
+<ul><li>支持表子查询</li></ul></li> <li>where或having后面：★
+<ul><li>标量子查询（单行） √</li> <li>列子查询  （多行） √</li> <li>行子查询</li></ul></li> <li>exists后面（相关子查询）
+<ul><li>表子查询</li></ul></li></ul></li> <li>按结果集的行列数不同：
+<ul><li>标量子查询（结果集只有一行一列）</li> <li>列子查询（结果集只有一列多行）</li> <li>行子查询（结果集有一行多列）</li> <li>表子查询（结果集一般为多行多列）</li></ul></li></ul> <h5 id="where或having后面"><a href="#where或having后面" class="header-anchor">#</a> where或having后面</h5> <ol><li><p>标量子查询（单行子查询）</p></li> <li><p>列子查询（多行子查询）</p></li> <li><p>行子查询（多列多行）</p></li></ol> <p>特点：</p> <ul><li><p>子查询放在小括号内</p></li> <li><p>子查询一般放在条件的右侧</p></li> <li><p>标量子查询，一般搭配着单行操作符使用</p> <p><code>&gt; &lt; &gt;= &lt;= = &lt;&gt;</code></p> <p>列子查询，一般搭配着多行操作符使用</p> <p>in、any/some、all</p></li> <li><p>子查询的执行优先于主查询执行，主查询的条件用到了子查询的结果</p></li></ul> <p>行子查询（结果集一行多列或多行多列）</p> <div class="language-mysql extra-class"><pre class="language-text"><code>#案例：查询员工编号最小并且工资最高的员工信息
+SELECT * 
+FROM employees
+WHERE (employee_id,salary)=(
+	SELECT MIN(employee_id),MAX(salary)
+	FROM employees
+);
+</code></pre></div><h5 id="select后面"><a href="#select后面" class="header-anchor">#</a> select后面</h5> <p>不会</p> <div class="language-mysql extra-class"><pre class="language-text"><code>#案例：查询每个部门的员工个数
+SELECT d.*,(
+
+	SELECT COUNT(*)
+	FROM employees e
+	WHERE e.department_id = d.`department_id`
+ ) 个数
+ FROM departments d;
+</code></pre></div><h5 id="from后面"><a href="#from后面" class="header-anchor">#</a> from后面</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>#案例：查询每个部门的平均工资的工资等级
+#①查询每个部门的平均工资
+SELECT AVG(salary),department_id
+FROM employees
+GROUP BY department_id
+
+
+SELECT * FROM job_grades;
+
+
+#②连接①的结果集和job_grades表，筛选条件平均工资 between lowest_sal and highest_sal
+
+SELECT  ag_dep.*,g.`grade_level`
+FROM (
+	SELECT AVG(salary) ag,department_id
+	FROM employees
+	GROUP BY department_id
+) ag_dep
+INNER JOIN job_grades g
+ON ag_dep.ag BETWEEN lowest_sal AND highest_sal;
+
+
+</code></pre></div><h4 id="exist"><a href="#exist" class="header-anchor">#</a> exist</h4> <h4 id="分页查询"><a href="#分页查询" class="header-anchor">#</a> 分页查询</h4> <p><code>limit offset,size</code></p> <p>offset要显示条目的其实索引（从0开始）</p> <p>size要显示的条目个数</p> <p>放在查询语句的最后</p> <p>要显示的页数page，每页的条目数size</p> <p>limit (page-1)*size,size)</p> <h4 id="联合查询"><a href="#联合查询" class="header-anchor">#</a> 联合查询</h4> <p>union 联合 合并：将多条查询语句的结果合并成一个结果</p> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>查询语句1
+union
+查询语句2
+union
+...
+</code></pre></div><p>应用场景：
+要查询的结果来自于多个表，且多个表没有直接的连接关系，但查询的信息一致时</p> <p>特点：★</p> <ol><li>要求多条查询语句的查询列数是一致的！</li> <li>要求多条查询语句的查询的每一列的类型和顺序最好一致</li> <li>union关键字默认去重，如果使用union all 可以包含重复项</li></ol> <h3 id="插入语句"><a href="#插入语句" class="header-anchor">#</a> 插入语句</h3> <h4 id="方式一-经典的插入"><a href="#方式一-经典的插入" class="header-anchor">#</a> 方式一：经典的插入</h4> <ul><li><p>语法：</p> <p>insert into 表名(列名,...) values(值1,...);</p></li></ul> <ol><li>插入的值的类型要与列的类型一致或兼容</li> <li>不可以为null的列必须插入值。</li> <li>列数和值的个数必须一致</li> <li>可以省略列名，默认所有列，而且列的顺序和表中列的顺序一致</li></ol> <h4 id="方式二"><a href="#方式二" class="header-anchor">#</a> 方式二</h4> <p>语法：
+insert into 表名
+set 列名=值,列名=值,..</p> <p>INSERT INTO beauty
+SET id=19,NAME='刘涛',phone='999';</p> <ol><li><p>方式一支持插入多行,方式二不支持</p></li> <li><p>方式一支持子查询，方式二不支持</p> <div class="language-mysql extra-class"><pre class="language-text"><code>INSERT INTO beauty(id,NAME,phone)
+SELECT 26,'宋茜','11809866';
+
+INSERT INTO beauty(id,NAME,phone)
+SELECT id,boyname,'1234567'
+FROM boys WHERE id&lt;3;
+</code></pre></div></li></ol> <h3 id="修改语句"><a href="#修改语句" class="header-anchor">#</a> 修改语句</h3> <ol><li><p>修改单表的记录★</p> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>update 表名
+set 列=新值,列=新值,...
+where 筛选条件;
+</code></pre></div></li> <li><p>修改多表的记录【补充】</p> <p>语法：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>sql92语法：
+update 表1 别名,表2 别名
+set 列=值,...
+where 连接条件
+and 筛选条件;
+
+sql99语法：
+update 表1 别名
+inner|left|right join 表2 别名
+on 连接条件
+set 列=值,...
+where 筛选条件;
+</code></pre></div></li></ol> <h3 id="删除语句"><a href="#删除语句" class="header-anchor">#</a> 删除语句</h3> <ul><li><p>方式一：delete
+语法：</p> <ol><li><p>单表的删除【★】
+delete from 表名 where 筛选条件</p></li> <li><p>多表的删除【补充】</p></li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code>sql92语法：
+delete 表1的别名,表2的别名
+from 表1 别名,表2 别名
+where 连接条件
+and 筛选条件;
+
+sql99语法：
+
+delete 表1的别名,表2的别名
+from 表1 别名
+inner|left|right join 表2 别名 on 连接条件
+where 筛选条件;
+
+</code></pre></div></li> <li><p>方式二：truncate</p> <p>语法：truncate table 表名;</p></li></ul> <ol><li><p>delete 可以加where 条件，truncate不能加</p></li> <li><p>truncate删除，效率高一丢丢</p></li> <li><p>假如要删除的表中有自增长列，如果用delete删除后，再插入数据，自增长列的值从断点开始，而truncate删除后，再插入数据，自增长列的值从1开始。</p></li> <li><p>truncate删除没有返回值，delete删除有返回值</p></li> <li><p>truncate删除不能回滚，delete删除可以回滚.</p></li></ol> <h3 id="数据定义语言"><a href="#数据定义语言" class="header-anchor">#</a> 数据定义语言</h3> <h4 id="库和表的管理"><a href="#库和表的管理" class="header-anchor">#</a> 库和表的管理</h4> <p>库的管理</p> <p>创建、修改、删除</p> <p>表的管理</p> <p>创建、修改、删除</p> <p>创建： create
+修改： alter
+删除： drop</p> <h4 id="库的管理"><a href="#库的管理" class="header-anchor">#</a> 库的管理</h4> <ol><li><p>库的创建</p> <p>语法：
+<code>create database [if not exists]库名;</code></p></li></ol> <h5 id="库的修改"><a href="#库的修改" class="header-anchor">#</a> 库的修改</h5> <p><code>RENAME DATABASE books TO 新库名;</code></p> <p>更改库的字符集</p> <p><code>ALTER DATABASE books CHARACTER SET gbk;</code></p> <p>库的删除</p> <p><code>DROP DATABASE IF EXISTS books;</code></p> <h4 id="表的管理"><a href="#表的管理" class="header-anchor">#</a> 表的管理</h4> <h5 id="表的创建-★"><a href="#表的创建-★" class="header-anchor">#</a> 表的创建 ★</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>语法：
+create table 表名(
+	列名 列的类型【(长度) 约束】,
+	列名 列的类型【(长度) 约束】,
+	列名 列的类型【(长度) 约束】,
+	...
+	列名 列的类型【(长度) 约束】
+)
+</code></pre></div><h5 id="表的修改"><a href="#表的修改" class="header-anchor">#</a> 表的修改</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>语法
+alter table 表名 add|drop|modify|change column 列名 【列类型 约束】;
+</code></pre></div><ol><li><p>修改列名
+<code>ALTER TABLE book CHANGE COLUMN publishdate pubDate DATETIME;</code></p></li> <li><p>修改列的类型或约束</p> <p><code>ALTER TABLE book MODIFY COLUMN pubdate TIMESTAMP;</code></p></li> <li><p>添加新列
+<code>ALTER TABLE author ADD COLUMN annual DOUBLE;</code></p></li> <li><p>删除列</p> <p><code>ALTER TABLE book_author DROP COLUMN annual;</code></p></li> <li><p>修改表名</p> <p><code>ALTER TABLE author RENAME TO book_author;</code></p></li></ol> <h5 id="表的删除"><a href="#表的删除" class="header-anchor">#</a> 表的删除</h5> <p><code>DROP TABLE 【IF EXISTS】 表名;</code></p> <h5 id="表的复制"><a href="#表的复制" class="header-anchor">#</a> 表的复制</h5> <p>仅仅复制表的结构</p> <p><code>CREATE TABLE copy LIKE author;</code></p> <p>复制表的结构+数据</p> <p><code>CREATE TABLE copy2 SELECT * FROM author;</code></p> <p>只复制部分数据</p> <p><code>CREATE TABLE copy3 SELECT id,au_name FROM author WHERE nation='中国';</code></p> <p>仅仅复制某些字段</p> <p><code>CREATE TABLE copy4 SELECT id,au_name FROM author WHERE 0;</code>( 1=2)(where null)</p> <h3 id="数据类型"><a href="#数据类型" class="header-anchor">#</a> 数据类型</h3> <ul><li>数值型：
+<ul><li>整型</li> <li>小数：
+<ul><li>定点数</li> <li>浮点数</li></ul></li></ul></li> <li>字符型：
+<ul><li>较短的文本：char、varchar</li> <li>较长的文本：text、blob（较长的二进制数据）</li></ul></li> <li>日期型：</li></ul> <h4 id="整型"><a href="#整型" class="header-anchor">#</a> 整型</h4> <table><thead><tr><th style="text-align:center;">分类</th> <th style="text-align:center;">字节</th></tr></thead> <tbody><tr><td style="text-align:center;">tinyint</td> <td style="text-align:center;">1</td></tr> <tr><td style="text-align:center;">smallint</td> <td style="text-align:center;">2</td></tr> <tr><td style="text-align:center;">mediumint</td> <td style="text-align:center;">3</td></tr> <tr><td style="text-align:center;">int/integer</td> <td style="text-align:center;">4</td></tr> <tr><td style="text-align:center;">bigint</td> <td style="text-align:center;">8</td></tr></tbody></table> <p>特点：</p> <ol><li><p>如果不设置无符号还是有符号，默认是有符号，如果想设置无符号，需要添加unsigned关键字</p></li> <li><p>如果插入的数值超出了整型的范围,会报out of range异常，并且插入临界值</p></li> <li><p>如果不设置长度，会有默认的长度
+长度代表了显示的最大宽度，如果不够会用0在左边填充，但必须搭配zerofill使用！</p></li> <li><p>如何设置无符号和有符号</p> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS tab_int;
+CREATE TABLE tab_int(
+	t1 INT(7) ZEROFILL,
+	t2 INT(7) ZEROFILL,//默认无符号
+    t2 INT(7) UNSIGNED,
+);
+</code></pre></div></li></ol> <h5 id="小数"><a href="#小数" class="header-anchor">#</a> 小数</h5> <p>分类：</p> <ol><li><p>浮点型</p> <ul><li>float(M,D)</li> <li>double(M,D)</li></ul> <p>2.定点型</p> <ul><li>dec(M，D)</li> <li>decimal(M,D)</li></ul></li></ol> <p>特点：</p> <ol><li><p>M：整数部位+小数部位
+D：小数部位
+如果超过范围，则插入临界值</p></li> <li><p>M和D都可以省略
+如果是decimal，则M默认为10，D默认为0
+如果是float和double，则会根据插入的数值的精度来决定精度</p></li> <li><p>定点型的精确度较高，如果要求插入数值的精度较高如货币运算等则考虑使用</p></li></ol> <p>所选择的类型越简单越好，能保存数值的类型越小越好</p> <h4 id="字符型"><a href="#字符型" class="header-anchor">#</a> 字符型</h4> <ul><li>较短的文本：
+<ul><li>char</li> <li>varchar</li></ul></li> <li>其他：
+<ul><li>binary和varbinary用于保存较短的二进制</li> <li>enum用于保存枚举</li> <li>set用于保存集合</li></ul></li> <li>较长的文本：
+<ul><li>text</li> <li>blob(较大的二进制)</li></ul></li></ul> <p>特点:</p> <table><thead><tr><th></th> <th>写法</th> <th>M的意思</th> <th>特点</th> <th>空间的耗费</th> <th>效率</th></tr></thead> <tbody><tr><td>char</td> <td>char(M)</td> <td>最大的字符数，可以省略，默认为1</td> <td>固定长度的字符</td> <td>比较耗费</td> <td>高</td></tr> <tr><td>varchar</td> <td>varchar(M)</td> <td>最大的字符数不可省略</td> <td>可变长度的字符</td> <td>比较节省</td> <td>低</td></tr></tbody></table> <h5 id="enum类型"><a href="#enum类型" class="header-anchor">#</a> Enum类型</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE tab_char(
+	c1 ENUM('a','b','c')
+);
+</code></pre></div><h5 id="set类型"><a href="#set类型" class="header-anchor">#</a> set类型</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE tab_set(
+	s1 SET('a','b','c','d')
+);
+INSERT INTO tab_set VALUES('a');
+INSERT INTO tab_set VALUES('A,B');
+INSERT INTO tab_set VALUES('a,c,d');
+</code></pre></div><h4 id="日期类型"><a href="#日期类型" class="header-anchor">#</a> 日期类型</h4> <table><thead><tr><th>日期和时间类型</th> <th>字节</th> <th>最小值</th> <th>最大值</th></tr></thead> <tbody><tr><td>date</td> <td>4</td> <td>1000-01-01</td> <td>9999-12-31</td></tr> <tr><td>datetime不受时区影响</td> <td>8</td> <td>1000-01-01 00:00:00</td> <td>9999-12-32 23:59:59</td></tr> <tr><td>timestamp受时区影响</td> <td>4</td> <td>19700101080001</td> <td>2038年的某个时刻</td></tr> <tr><td>time</td> <td>3</td> <td>-838:59:59</td> <td>838:59:59</td></tr> <tr><td>year</td> <td>1</td> <td>1901</td> <td>2155</td></tr></tbody></table> <h4 id="常见约束"><a href="#常见约束" class="header-anchor">#</a> 常见约束</h4> <h5 id="含义-2"><a href="#含义-2" class="header-anchor">#</a> 含义</h5> <p>一种限制，用于限制表中的数据，为了保证表中的数据的准确和可靠性</p> <h5 id="分类-六大约束"><a href="#分类-六大约束" class="header-anchor">#</a> 分类：六大约束</h5> <ul><li>NOT NULL：非空，用于保证该字段的值不能为空
+比如姓名、学号等</li> <li>DEFAULT:默认，用于保证该字段有默认值
+比如性别</li> <li>PRIMARY KEY:主键，用于保证该字段的值具有唯一性，并且非空
+比如学号、员工编号等</li> <li>UNIQUE:唯一，用于保证该字段的值具有唯一性，可以为空
+比如座位号</li> <li>CHECK:检查约束【mysql中不支持】
+比如年龄、性别</li> <li>FOREIGN KEY:外键，用于限制两个表的关系，用于保证该字段的值必须来自于主表的关联列的值
+在从表添加外键约束，用于引用主表中某列的值
+比如学生表的专业编号，员工表的部门编号，员工表的工种编号</li></ul> <p>添加约束的时机：</p> <ol><li>创建表时</li> <li>修改表时</li></ol> <p>约束的添加分类：</p> <ul><li><p>列级约束：</p> <p>六大约束语法上都支持，但外键约束没有效果</p></li> <li><p>表级约束：</p> <p>除了非空、默认，其他的都支持</p></li></ul> <h5 id="列级约束"><a href="#列级约束" class="header-anchor">#</a> 列级约束</h5> <p>语法：</p> <p>直接在字段名和类型后面追加 约束类型即可。</p> <p>只支持：默认、非空、主键、唯一</p> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE stuinfo(
+	id INT PRIMARY KEY,#主键
+	stuName VARCHAR(20) NOT NULL UNIQUE,#非空
+	gender CHAR(1) CHECK(gender='男' OR gender ='女'),#检查,不支持
+	seat INT UNIQUE,#唯一
+	age INT DEFAULT  18,#默认约束
+	majorId INT REFERENCES major(id)#外键，不支持
+
+);
+
+
+CREATE TABLE major(
+	id INT PRIMARY KEY,
+	majorName VARCHAR(20)
+);
+</code></pre></div><p>查看stuinfo中的所有索引，包括主键、外键、唯一
+SHOW INDEX FROM stuinfo;</p> <h4 id="表级约束"><a href="#表级约束" class="header-anchor">#</a> 表级约束</h4> <p>语法：在各个字段的最下面</p> <p>【constraint 约束名】 约束类型(字段名)</p> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS stuinfo;
+CREATE TABLE stuinfo(
+	id INT,
+	stuname VARCHAR(20),
+	gender CHAR(1),
+	seat INT,
+	age INT,
+	majorid INT,
+	
+	CONSTRAINT pk PRIMARY KEY(id),#主键
+	CONSTRAINT uq UNIQUE(seat),#唯一键
+	CONSTRAINT ck CHECK(gender ='男' OR gender  = '女'),#检查
+	CONSTRAINT fk_stuinfo_major FOREIGN KEY(majorid) REFERENCES major(id)#外键
+	
+);
+SHOW INDEX FROM stuinfo;
+</code></pre></div><h5 id="通用的写法-★"><a href="#通用的写法-★" class="header-anchor">#</a> 通用的写法：★</h5> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE IF NOT EXISTS stuinfo(
+	id INT PRIMARY KEY,
+	stuname VARCHAR(20),
+	sex CHAR(1),
+	age INT DEFAULT 18,
+	seat INT UNIQUE,
+	majorid INT,
+	CONSTRAINT fk_stuinfo_major FOREIGN KEY(majorid) REFERENCES major(id)
+);
+</code></pre></div><h4 id="修改表时添加约束"><a href="#修改表时添加约束" class="header-anchor">#</a> 修改表时添加约束</h4> <p>1、添加列级约束
+alter table 表名 modify column 字段名 字段类型 新约束;</p> <p>2、添加表级约束
+alter table 表名 add 【constraint 约束名】 约束类型(字段名) 【外键的引用】;</p> <div class="language-mysql extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS stuinfo;
+CREATE TABLE stuinfo(
+	id INT,
+	stuname VARCHAR(20),
+	gender CHAR(1),
+	seat INT,
+	age INT,
+	majorid INT
+)
+DESC stuinfo;
+#1.添加非空约束
+ALTER TABLE stuinfo MODIFY COLUMN stuname VARCHAR(20)  NOT NULL;
+#2.添加默认约束
+ALTER TABLE stuinfo MODIFY COLUMN age INT DEFAULT 18;
+#3.添加主键
+#①列级约束
+ALTER TABLE stuinfo MODIFY COLUMN id INT PRIMARY KEY;
+#②表级约束
+ALTER TABLE stuinfo ADD PRIMARY KEY(id);
+#4.添加唯一
+#①列级约束
+ALTER TABLE stuinfo MODIFY COLUMN seat INT UNIQUE;
+#②表级约束
+ALTER TABLE stuinfo ADD UNIQUE(seat);
+#5.添加外键
+ALTER TABLE stuinfo ADD CONSTRAINT fk_stuinfo_major FOREIGN KEY(majorid) REFERENCES major(id); 
+</code></pre></div><h4 id="修改表时删除约束"><a href="#修改表时删除约束" class="header-anchor">#</a> 修改表时删除约束</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>#1.删除非空约束
+ALTER TABLE stuinfo MODIFY COLUMN stuname VARCHAR(20) NULL;
+#2.删除默认约束
+ALTER TABLE stuinfo MODIFY COLUMN age INT ;
+#3.删除主键
+ALTER TABLE stuinfo DROP PRIMARY KEY;
+#4.删除唯一
+ALTER TABLE stuinfo DROP INDEX seat;
+#5.删除外键
+ALTER TABLE stuinfo DROP FOREIGN KEY fk_stuinfo_major;
+</code></pre></div><h3 id="标识列"><a href="#标识列" class="header-anchor">#</a> 标识列</h3> <p>又称为自增长列</p> <p>含义：可以不用手动的插入值，系统提供默认的序列值</p> <p>特点：</p> <ol><li>标识列必须和主键搭配吗？不一定，但要求是一个key</li> <li>一个表可以有几个标识列？至多一个！</li> <li>标识列的类型只能是数值型</li> <li>标识列可以通过 <code>SET auto_increment_increment=3;</code>设置步长可以通过 手动插入值，设置起始值</li></ol> <div class="language-mysql extra-class"><pre class="language-text"><code>#一、创建表时设置标识列
+DROP TABLE IF EXISTS tab_identity;
+CREATE TABLE tab_identity(
+	id INT  ,
+	NAME FLOAT UNIQUE AUTO_INCREMENT,
+	seat INT 
+);
+TRUNCATE TABLE tab_identity;
+INSERT INTO tab_identity(id,NAME) VALUES(NULL,'john');
+INSERT INTO tab_identity(NAME) VALUES('lucy');
+SELECT * FROM tab_identity;
+SHOW VARIABLES LIKE '%auto_increment%';
+SET auto_increment_increment=3;
+</code></pre></div><p>查看支持的存储引擎<code>SHOW ENGINES;</code></p> <h3 id="事务"><a href="#事务" class="header-anchor">#</a> 事务</h3> <p>隐式事务：事务没有明显的开启和结束的标记</p> <p>显式事务：事务具有明显的开启和结束的标记</p> <p>前提：必须先设置自动提交功能为禁用</p> <div class="language-mysql extra-class"><pre class="language-text"><code>步骤1：开启事务
+set autocommit=0;
+start transaction;可选的
+步骤2：编写事务中的sql语句(select insert update delete)
+语句1;
+语句2;
+...
+
+步骤3：结束事务
+commit;提交事务
+rollback;回滚事务
+
+savepoint 节点名;设置保存点
+</code></pre></div><p>truncate不能回滚</p> <h4 id="事务的隔离级别"><a href="#事务的隔离级别" class="header-anchor">#</a> 事务的隔离级别</h4> <table><thead><tr><th style="text-align:center;"></th> <th style="text-align:center;">脏读</th> <th style="text-align:center;">不可重复读</th> <th style="text-align:center;">幻读</th></tr></thead> <tbody><tr><td style="text-align:center;">read uncommitted</td> <td style="text-align:center;">√</td> <td style="text-align:center;">√</td> <td style="text-align:center;">√</td></tr> <tr><td style="text-align:center;">read committed</td> <td style="text-align:center;">×</td> <td style="text-align:center;">√</td> <td style="text-align:center;">√</td></tr> <tr><td style="text-align:center;">repeatable read</td> <td style="text-align:center;">×</td> <td style="text-align:center;">×</td> <td style="text-align:center;">√</td></tr> <tr><td style="text-align:center;">serializable</td> <td style="text-align:center;">×</td> <td style="text-align:center;">×</td> <td style="text-align:center;">×</td></tr></tbody></table> <p>mysql中默认 第三个隔离级别 repeatable read
+oracle中默认第二个隔离级别 read committed
+查看隔离级别
+<code>select @@tx_isolation;</code>
+设置隔离级别
+<code>set session|global transaction isolation level 隔离级别;</code></p> <h4 id="演示savepoint-的使用"><a href="#演示savepoint-的使用" class="header-anchor">#</a> 演示savepoint 的使用</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>SET autocommit=0;
+START TRANSACTION;
+DELETE FROM account WHERE id=25;
+SAVEPOINT a;#设置保存点
+DELETE FROM account WHERE id=28;
+ROLLBACK TO a;#回滚到保存点
+
+SELECT * FROM account;
+
+</code></pre></div><h3 id="视图"><a href="#视图" class="header-anchor">#</a> 视图</h3> <p>含义：虚拟表，和普通表一样使用
+mysql5.1版本出现的新特性，是通过表动态生成的数据</p> <p>比如：舞蹈班和普通班级的对比</p> <table><thead><tr><th style="text-align:center;"></th> <th style="text-align:center;">创建语法的关键字</th> <th style="text-align:center;">是否实际占用物理空间</th> <th style="text-align:center;">使用</th></tr></thead> <tbody><tr><td style="text-align:center;">视图</td> <td style="text-align:center;">create view</td> <td style="text-align:center;">只是保存了sql逻辑</td> <td style="text-align:center;">增删改查，只是一般不能增删改</td></tr> <tr><td style="text-align:center;">表</td> <td style="text-align:center;">create table</td> <td style="text-align:center;">保存了数据</td> <td style="text-align:center;">增删改查</td></tr></tbody></table> <div class="language-mysql extra-class"><pre class="language-text"><code>#案例：查询姓张的学生名和专业名
+SELECT stuname,majorname
+FROM stuinfo s
+INNER JOIN major m ON s.`majorid`= m.`id`
+WHERE s.`stuname` LIKE '张%';
+
+CREATE VIEW v1
+AS
+SELECT stuname,majorname
+FROM stuinfo s
+INNER JOIN major m ON s.`majorid`= m.`id`;
+
+SELECT * FROM v1 WHERE stuname LIKE '张%';
+</code></pre></div><h4 id="创建"><a href="#创建" class="header-anchor">#</a> 创建</h4> <p><code>语法： create view 视图名 as 查询语句;</code></p> <h4 id="修改"><a href="#修改" class="header-anchor">#</a> 修改</h4> <p>方式一：</p> <p><code>create or replace view 视图名 as 查询语句;</code></p> <p>方式二：
+<code>语法： alter view 视图名 as 查询语句;</code></p> <h4 id="删除"><a href="#删除" class="header-anchor">#</a> 删除</h4> <p>语法：<code>drop view 视图名,视图名,...;</code></p> <h4 id="查看"><a href="#查看" class="header-anchor">#</a> 查看</h4> <p><code>DESC myv3;</code></p> <p><code>SHOW CREATE VIEW myv3;</code></p> <h5 id="视图的更新"><a href="#视图的更新" class="header-anchor">#</a> 视图的更新</h5> <p>具备以下特点的视图不允许更新</p> <p>包含以下关键字的sql语句：分组函数、distinct、group  by、having、union或者union all</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年2月13日星期六下午4点23分</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a5ec0a2d.js" defer></script><script src="/assets/js/2.785c97dd.js" defer></script><script src="/assets/js/13.9b030b75.js" defer></script>
+  </body>
+</html>

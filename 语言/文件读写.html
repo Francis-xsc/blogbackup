@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件读写 | Francis-xsc</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <meta name="description" content="徐思崇">
+    <meta name="author" href="Francis-xsc">
+    <link rel="preload" href="/assets/css/0.styles.6b7c271b.css" as="style"><link rel="preload" href="/assets/js/app.a5ec0a2d.js" as="script"><link rel="preload" href="/assets/js/2.785c97dd.js" as="script"><link rel="preload" href="/assets/js/33.f0160151.js" as="script"><link rel="prefetch" href="/assets/js/10.ad541554.js"><link rel="prefetch" href="/assets/js/11.4ef84df1.js"><link rel="prefetch" href="/assets/js/12.a78e1bb6.js"><link rel="prefetch" href="/assets/js/13.9b030b75.js"><link rel="prefetch" href="/assets/js/14.a417bbc1.js"><link rel="prefetch" href="/assets/js/15.ecabb56f.js"><link rel="prefetch" href="/assets/js/16.216857e5.js"><link rel="prefetch" href="/assets/js/17.dde2a7cb.js"><link rel="prefetch" href="/assets/js/18.04704f8d.js"><link rel="prefetch" href="/assets/js/19.7f14631d.js"><link rel="prefetch" href="/assets/js/20.602915c9.js"><link rel="prefetch" href="/assets/js/21.98bfad00.js"><link rel="prefetch" href="/assets/js/22.01a3eb25.js"><link rel="prefetch" href="/assets/js/23.48ede5bc.js"><link rel="prefetch" href="/assets/js/24.97e54fe0.js"><link rel="prefetch" href="/assets/js/25.41e29e25.js"><link rel="prefetch" href="/assets/js/26.798a511f.js"><link rel="prefetch" href="/assets/js/27.99bf2ebc.js"><link rel="prefetch" href="/assets/js/28.893b543f.js"><link rel="prefetch" href="/assets/js/29.5a462b04.js"><link rel="prefetch" href="/assets/js/3.bff38b48.js"><link rel="prefetch" href="/assets/js/30.606c4725.js"><link rel="prefetch" href="/assets/js/31.3c34f459.js"><link rel="prefetch" href="/assets/js/32.7a04a839.js"><link rel="prefetch" href="/assets/js/34.33a3b310.js"><link rel="prefetch" href="/assets/js/35.508b6360.js"><link rel="prefetch" href="/assets/js/4.71453c45.js"><link rel="prefetch" href="/assets/js/5.5fc371a9.js"><link rel="prefetch" href="/assets/js/6.42ef6059.js"><link rel="prefetch" href="/assets/js/7.2febbb17.js"><link rel="prefetch" href="/assets/js/8.5566e199.js"><link rel="prefetch" href="/assets/js/9.ec62d861.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6b7c271b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="Francis-xsc" class="logo"> <span class="site-name can-hide">Francis-xsc</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/大话数据结构/" class="nav-link">
+  大话数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/快速幂算法 牛客小白月赛 1-C分元宵/" class="nav-link">
+  快速幂算法
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_邓俊辉/" class="nav-link">
+  数据结构_邓俊辉
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_学校/" class="nav-link">
+  数据结构(学校）
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/语言/文件读写/" class="nav-link">
+  文件读写
+</a></li><li class="dropdown-item"><!----> <a href="/语言/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/语言/python-北理工/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">乱七八糟</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">乱七八糟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/乱七八糟/乱七八糟/" class="nav-link">
+  乱七八糟
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/虚拟机安装凤凰OS/" class="nav-link">
+  虚拟机安装凤凰OS
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/数据库/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/国内访问GitHub/" class="nav-link">
+  国内访问GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/软件工程过程/" class="nav-link">
+  软件工程过程
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/WindowsTerminal/" class="nav-link">
+  Windows Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/IDEA/" class="nav-link">
+  IDEA
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/about/" class="nav-link">
+  Guide
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">数据结构与算法</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/数据结构与算法/大话数据结构/" class="nav-link">
+  大话数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/快速幂算法 牛客小白月赛 1-C分元宵/" class="nav-link">
+  快速幂算法
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_邓俊辉/" class="nav-link">
+  数据结构_邓俊辉
+</a></li><li class="dropdown-item"><!----> <a href="/数据结构与算法/数据结构_学校/" class="nav-link">
+  数据结构(学校）
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/语言/文件读写/" class="nav-link">
+  文件读写
+</a></li><li class="dropdown-item"><!----> <a href="/语言/哈学院算法培训/" class="nav-link">
+  哈学院算法培训
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/语言/Javascript/" class="nav-link">
+  Javascript
+</a></li><li class="dropdown-item"><!----> <a href="/语言/python-北理工/" class="nav-link">
+  python
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">乱七八糟</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">乱七八糟</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/乱七八糟/乱七八糟/" class="nav-link">
+  乱七八糟
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/虚拟机安装凤凰OS/" class="nav-link">
+  虚拟机安装凤凰OS
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/数据库/" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/国内访问GitHub/" class="nav-link">
+  国内访问GitHub
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/Markdown/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/软件工程过程/" class="nav-link">
+  软件工程过程
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/WindowsTerminal/" class="nav-link">
+  Windows Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/乱七八糟/IDEA/" class="nav-link">
+  IDEA
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>文件读写</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#与输入输出操作相关的类" class="sidebar-link">与输入输出操作相关的类</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#标准流对象" class="sidebar-link">标准流对象</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#输出重定向" class="sidebar-link">输出重定向</a></li><li class="sidebar-sub-header"><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#输入重定向" class="sidebar-link">输入重定向</a></li></ul></li><li><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#istream类的成员函数" class="sidebar-link">istream类的成员函数</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#创建文件" class="sidebar-link">创建文件</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/%E8%AF%AD%E8%A8%80/%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99.html#文件的读写指针" class="sidebar-link">文件的读写指针</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文件读写"><a href="#文件读写" class="header-anchor">#</a> 文件读写</h1> <h2 id="与输入输出操作相关的类"><a href="#与输入输出操作相关的类" class="header-anchor">#</a> 与输入输出操作相关的类</h2> <p><img src="https://raw.githubusercontent.com/Francis-xsc/vuepress_imgs/master/img/image-20201004002216300.png" alt="image-20201004002216300"></p> <h2 id="标准流对象"><a href="#标准流对象" class="header-anchor">#</a> 标准流对象</h2> <p>输入流对象:cin 与标准输入设备相连</p> <p>输出流对象:cout 与标准输出设备相连</p> <p>​					cerr 与标准错误输出设备相连</p> <p>​					clog 与标准错误输出设备相连</p> <p>缺省情况下</p> <div class="language-c++ extra-class"><pre class="language-text"><code>cerr&lt;&lt;&quot;Hello,world&quot;&lt;&lt;endl;
+clog&lt;&lt;&quot;Hello,world&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;Hello,world&quot;&lt;&lt;endl;//一样
+</code></pre></div><p>cin对应于标准输入流，用于从键盘读取数据，也可以被==重定向==为从文件中读取数据。
+cout对应于标准输出流，用于向屏幕输出数据，也可以==被重定==为向为向文件写入数据。
+cerr对应于标准错误输出流，用于向屏幕输出出错信息
+clog对应于标准错误输出流，用于向屏幕输出出错信息
+cerr和clog的区别在于cerr不使用缓冲区，直接向显示器输出信息;而输出到clog中的信息先会被存放在缓冲区，缓冲区满或者刷新时才输出到屏幕。</p> <h3 id="输出重定向"><a href="#输出重定向" class="header-anchor">#</a> 输出重定向</h3> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+    int x,y;
+    cin&gt;&gt;x&gt;&gt;y;
+    freopen(&quot;test.txt&quot;,&quot;w&quot;,stdout);//将标准输出重定向到test.txt文件
+    if(y==0)
+        cerr&lt;&quot;error.&quot;&lt;&lt;endl;
+    else
+        cout&lt;&lt;x/y;//输出结果到test.txt
+}
+</code></pre></div><h3 id="输入重定向"><a href="#输入重定向" class="header-anchor">#</a> 输入重定向</h3> <div class="language- extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+	double f;
+	int n;
+	freopen(&quot;t.txt&quot;,&quot;r&quot;,stdin);
+	cin&gt;&gt;f&gt;&gt;n;
+	cout&lt;&lt;f&lt;&lt;&quot;,&quot;&lt;&lt;n&lt;&lt;endl;
+}
+</code></pre></div><h2 id="istream类的成员函数"><a href="#istream类的成员函数" class="header-anchor">#</a> istream类的成员函数</h2> <div class="language-c++ extra-class"><pre class="language-text"><code>bool eof();//判断输入流是否结束
+int peek();//返回下一个字符，但不从流中去掉
+istream&amp; putback(char c);//将字符c放回输入流
+istream&amp; ignore(int nCount=1,int delim=EOF);//从流中删掉最多nCount个字符，遇到EOF时结束
+</code></pre></div><h2 id="创建文件"><a href="#创建文件" class="header-anchor">#</a> 创建文件</h2> <div class="language-c++ extra-class"><pre class="language-text"><code>#include&lt;iostream&gt;//包含头文件
+ofstream outFile(&quot;clients.dat&quot;,ios::out|ios::binart);
+</code></pre></div><ul><li>&quot;clients.dat&quot;	要创建的文件的名字</li> <li>ios::out 			文件打开方式
+<ul><li>ios::out  	输出到文件，删除原有内容</li> <li>ios::app	输出到文件，保留原有内容，总是在尾部添加</li></ul></li> <li>ios::binary	    以二进制文件格式打开文件</li></ul> <p>也可以先创建ofstream对象，再用open函数打开</p> <div class="language-c++ extra-class"><pre class="language-text"><code>ofstream fout;
+fout.open(&quot;test.out&quot;,ios::out|ios::binary);
+</code></pre></div><p>判断打开是否成功：</p> <div class="language-c++ extra-class"><pre class="language-text"><code>if(!fout)
+    cout&lt;&lt;&quot;File open error!&quot;&lt;&lt;endl;
+</code></pre></div><p>文件名可以给出绝对路径，也可以给出相对路径。</p> <p>没有交代路径信息，就是在当前文件夹下找文件。</p> <h2 id="文件的读写指针"><a href="#文件的读写指针" class="header-anchor">#</a> 文件的读写指针</h2> <ul><li>对于输入文件，有一个读指针；</li> <li>对于输出文件，有一个写指针；</li> <li>对于输入输出文件，有一个读写指针；</li> <li>表示文件操作的当前位置，该指针在哪里，读写操作就在哪里进行</li></ul> <div class="language-c++ extra-class"><pre class="language-text"><code>ofstream fout(&quot;a1.out&quot;,ios::app);//以添加方式打开
+long location=fout.tellp();//取得写指针位置
+location=10;
+fout.seekp(location);//将写指针移动到第十个字节处
+fout.seekp(location,ios::beg);//从头数location
+fout.seekp(location,ios::cur);//从当前位置数location
+fout.seekp(location,ios::end);//从尾部数location
+//location可以为负值
+</code></pre></div><div class="language-c++ extra-class"><pre class="language-text"><code>ifstream fin(&quot;a1.in&quot;,ios::ate);//打开文件，定位文件指针到文件尾
+long location=fin.tellg();//取得读指针的位置
+location=10L;
+fout.seekg(location);//将读指针移动到第十个字节处
+fout.seekg(location,ios::beg);//从头数location
+fout.seekg(location,ios::cur);//从当前位置数location
+fout.seekg(location,ios::end);//从尾部数location
+//location可以为负值
+</code></pre></div><p>关闭文件 xxx.close();</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年1月26日星期二晚上11点38分</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a5ec0a2d.js" defer></script><script src="/assets/js/2.785c97dd.js" defer></script><script src="/assets/js/33.f0160151.js" defer></script>
+  </body>
+</html>
